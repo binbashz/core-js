@@ -1,8 +1,53 @@
 
+## Core-js: Biblioteca de JavaScript para Compatibilidad
 
-# Pensamientos de @zloirock
+**Core-js** es una biblioteca JavaScript que se utiliza para proporcionar funciones y características de JavaScript moderno en navegadores y entornos que no las admiten nativamente. Es comúnmente utilizado en proyectos de desarrollo web para garantizar que el código JavaScript funcione de manera consistente en diversos navegadores.
 
-## Introducción
+### Para qué sirve Core-js
+
+Core-js es una biblioteca que ofrece polyfills (implementaciones de funciones y características) para estándares de JavaScript modernos, desde características antiguas de ES5 hasta características de vanguardia. Su utilidad principal es garantizar la compatibilidad y el funcionamiento de tu código JavaScript en una amplia variedad de navegadores y entornos. Algunos de los propósitos comunes de Core-js incluyen:
+
+1. **Compatibilidad**: Permite utilizar características de JavaScript moderno incluso en navegadores más antiguos que no las admiten de forma nativa.
+
+2. **Consistencia**: Asegura que tu código funcione de manera consistente en todos los navegadores y entornos.
+
+3. **Modularidad**: Core-js es modular, lo que significa que puedes cargar solo las funciones que necesitas en tu proyecto, lo que ayuda a mantener el tamaño del paquete bajo control.
+
+4. **Integración**: Se integra fácilmente con herramientas como Babel y otros transpiladores para facilitar el desarrollo de aplicaciones modernas.
+
+### Pasos generales de instalación
+
+1. **Instalación a través de npm** (Node Package Manager):
+
+   - Abre una terminal en el directorio de tu proyecto.
+   - Ejecuta el siguiente comando para instalar Core-js:
+
+     ```bash
+     npm install core-js
+     ```
+
+2. **Importación en tu proyecto**:
+
+   - En tu código JavaScript, importa las funciones o características específicas que necesitas desde Core-js. Por ejemplo:
+
+     ```javascript
+     import 'core-js/stable'; // Importa las características estables
+     import 'regenerator-runtime/runtime'; // Importa el runtime de generadores (si es necesario)
+     ```
+
+3. **Configuración (opcional)**:
+
+   - Puedes configurar Core-js para que se ajuste a tus necesidades específicas, como seleccionar las características que deseas incluir o excluir.
+
+4. **Uso en tu código**:
+
+   - Utiliza las funciones y características de Core-js en tu código como lo harías normalmente. Core-js se encargará de proporcionar las implementaciones necesarias según sea necesario para garantizar la compatibilidad.
+
+La configuración y los detalles específicos pueden variar según el proyectoy y las necesidades.
+
+### Pensamientos de @zloirock
+
+Introducción
 
 Hola, soy [@zloirock](https://enlace_al_perfil_de_zloirock), un desarrollador de código abierto a tiempo completo. En este documento, compartiré algunos pensamientos y reflexiones sobre diversos temas relacionados con el ecosistema de JavaScript y el proyecto core-js.
 
@@ -52,6 +97,9 @@ En este momento, este script que se ejecuta en los 1000 sitios web TOP detecta e
 - Spotify
 
 Con una verificación manual de este tipo, puede encontrar core-js entre el 75 y el 80% de los 100 sitios web principales, mientras que el script lo encontró entre el 55 y el 60%. En una muestra más grande, el porcentaje, por supuesto, disminuye.
+
+![core js](https://github.com/binbashz/core-js/assets/124454895/1e5ebc8a-5eaf-4ee5-848a-3008504c0b4a)
+
 
 Wappalyzer permite detectar tecnologías utilizadas, incluida core-js, con un complemento de navegador y anteriormente ha mostrado resultados interesantes, pero ahora en su sitio web, los resultados públicos de todas las tecnologías más populares se limitan a solo unos 5 millones de positivos. Las estadísticas basadas en los resultados de Wappalyzer están disponibles aquí y se muestran core-js en el 41% y el 44% de 8 millones de páginas probadas en dispositivos móviles y 5 millones de computadoras de escritorio. En este momento, Build With se muestra core-js en el 54% de los 10.000 sitios TOP (sin embargo, no estoy seguro de si su detección está completa y veo el gráfico desde otra realidad).
 
